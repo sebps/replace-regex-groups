@@ -1,0 +1,16 @@
+{
+  "name": "replace-regex-groups",
+  "version": "1.0.0",
+  "description": "A lightweight library to replace the regex groups in a string by a set of replacement values",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "sebpsdev",
+  "homepage": "https://github.com/sebpsdev/ReplaceRegexGroups",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
