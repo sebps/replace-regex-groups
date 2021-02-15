@@ -1,6 +1,6 @@
 {
   "name": "replace-regex-groups",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A lightweight library to replace the regex groups in a string by a set of replacement values",
   "main": "lib/index.js",
   "scripts": {
