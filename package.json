@@ -2,7 +2,7 @@
   "name": "replace-regex-groups",
   "version": "1.0.0",
   "description": "A lightweight library to replace the regex groups in a string by a set of replacement values",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
