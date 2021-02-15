@@ -34,6 +34,17 @@ const replaced = replaceRegexGroups(url, regex, replacements)
 // replaced is http://127.0.0.1:9090
 ```
 
+### Dataset pattern replacement
+```js
+const { readFileSync, writeFileSync } = require('fs')
+const replaceRegexGroups = require('replace-regex-groups')
+const transactions = readFileSync('./transactions.csv', 'utf8')
+const sourcePattern = /(?<reference>[A-Z]{4}.[A-Z0-9]*),(?<period>[0-9]{4}.[0-9]{2}),/gm
+const replacements = { reference: 'ANONYMIZED_REFERENCE', period: 'ANONYMIZED_PERIOD' }
+const anonymizedTransactions = replaceRegexGroups(transactions, sourcePattern, replacements)
+writeFileSync('./anonymized-transactions.csv', anonymizedTransactions)
+```
+
 ## Input validation
 - In case of unnamed capture groups the size of the replacements array must be the same as the capture groups count in the input regex
 - In case of named capture groups the keys in the replacements map must be the exact same as the capture groups names of the input regex
