@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "sebpsdev",
-  "homepage": "https://github.com/sebpsdev/ReplaceRegexGroups",
+  "author": "sebps",
+  "homepage": "https://github.com/sebps/replace-regex-groups",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
